@@ -10,7 +10,7 @@ var fizzBuzz = function (i) {
 	{
 		return "Fizz";
 	}
-	else if(i % 5 == 0)
+	else if((i % 5) == 0)
 	{
 		return "Buzz";
 	}
