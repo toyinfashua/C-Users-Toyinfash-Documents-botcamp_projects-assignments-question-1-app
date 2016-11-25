@@ -3,37 +3,37 @@ describe("Fizz Buzz tests ", function() {
 var chai = require('chai');
 var expect = chai.expect
 
-var fizzBuzz = require('../app/solution3.js');
+var myFinder = require('../app/solution3.js');
 
   it("should return `Fizz` for number divisible by 3", function() {
-    expect(fizzBuzz(3)).to.be('Fizz');
+    expect(myFinder.fizzBuzz(3)).to.be.equal('Fizz');
   });
 
   it("should return `Buzz` for number divisible by 5", function() {
-    expect(fizzBuzz.fizzBuzz(5)).to.be('Buzz');
+    expect(myFinder.fizzBuzz(5)).to.be.equal('Buzz');
   });
 
   it("should return `FizzBuzz` for 15", function() {
-    expect(fizzBuzz.fizzBuzz(15)).to.be('FizzBuzz');
+    expect(myFinder.fizzBuzz(15)).to.be.equal('FizzBuzz');
   });
 
   it("should return `FizzBuzz` for 45", function() {
-    expect(fizzBuzz.fizzBuzz(45)).to.be('FizzBuzz');
+    expect(myFinder.fizzBuzz(45)).to.be.equal('FizzBuzz');
   });
 
   it("should return `FizzBuzz` for 90", function() {
-    expect(fizzBuzz.fizzBuzz(90)).to.be('FizzBuzz');
+    expect(myFinder.fizzBuzz(90)).to.be.equal('FizzBuzz');
   });
 
   it("should return `Fizz` for 63", function() {
-    expect(fizzBuzz(63)).to.be('Fizz');
+    expect(myFinder.fizzBuzz(63)).to.be.equal('Fizz');
   });
 
   it("should return 7 since its indivisible by 3 and 5", function() {
-    expect(fizzBuzz(7)).to.be(7);
+    expect(myFinder.fizzBuzz(7)).to.be.equal(7);
   });
 
   it("should return 101 since its indivisible by 3 and 5", function() {
-    expect(fizzBuzz(101)).to.be(101);
+    expect(myFinder.fizzBuzz(101)).to.be.equal(101);
   });
 });

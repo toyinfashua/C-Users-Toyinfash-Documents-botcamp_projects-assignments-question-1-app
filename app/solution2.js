@@ -1,16 +1,21 @@
-(function() {
+ var quest = {
 
-var findMinMax = function (min,max) {
-	var minimum = min;
-	var maximum = max;
-	if ( var i<maximmum){
-		return min;
-	else
-		return max;
-	}
+findMinMax: function(arry) {
+var max = 0;
+var min = arry[0];
+   for(var i = 0; i < arry.length; i++) {
+     if (arry[i] > max) {
+       max = arry[i];
+     }
+     if (arry[i] < min) {
+       min = arry[i];
+     }
+   }
+   if (min === max) {
+     return [min];
+   } else {
+     return [min, max];
+   }
 }
-module.exports = {
-	'findMinMax': findMinMax
 }
-
-})();
+module.exports = quest;
